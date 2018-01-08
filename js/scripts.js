@@ -17,8 +17,19 @@ var grab = function(input3) {
   var store1 = firstLast(input3);
   var store2 = reverse(store1);
   var store3 = input + store2;
-  var array1 = store3.split("");
-  return array1.reverse().join("");
+
+  var i = 0;
+  var newstring = "";
+  while (i<store3.length) {
+    var temp = store3.charAt(i);
+    newstring = temp + newstring;
+    i = i + 1;
+  }
+  return newstring;
+
+
+  // var array1 = store3.split("");
+  // return array1.reverse().join("");
 }
 
 $("#left").click(function() {
