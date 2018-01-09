@@ -1,7 +1,11 @@
 
 $(document).ready(function() {
 
-var input = prompt("Enter a sentence to be encoded:");
+var input = "";
+
+$(".clickable2").click(function() {
+  input = prompt("Enter a sentence to be encoded:");
+});
 
 var firstLast = function(input1) {
   var first = input1.charAt(0).toUpperCase();
@@ -30,5 +34,11 @@ $("#right").click(function() {
   alert(grab(input))
 
 });
+
+$(".clickable").click(function() {
+  $(".gorilla").toggle();
+  $(".monkey").toggle();
+});
+
 
 });
